@@ -3,7 +3,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Collections.Generic;
 
-namespace Packer
+namespace ZipPacker
 {
 	public class ZipArchiveProvider : IZipPacker,IFileStream, IFileAdd , IDisposable
 	{

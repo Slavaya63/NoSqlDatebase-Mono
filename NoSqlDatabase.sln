@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSqlDatabase", "NoSqlDatab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{269BF096-A001-447F-BD26-E3EC85C4971F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packer", "Packer\Packer.csproj", "{AB7C5C64-BB73-4423-9D87-9482A68FC182}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipPacker", "ZipPacker\ZipPacker.csproj", "{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Debug|x86.Build.0 = Debug|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Release|x86.ActiveCfg = Release|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Release|x86.Build.0 = Release|x86
-		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Debug|x86.Build.0 = Debug|Any CPU
-		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Release|x86.ActiveCfg = Release|Any CPU
-		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Release|x86.Build.0 = Release|Any CPU
+		{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

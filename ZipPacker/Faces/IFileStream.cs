@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Packer
+namespace ZipPacker
 {
 	/// <summary>
 	/// I file stream.

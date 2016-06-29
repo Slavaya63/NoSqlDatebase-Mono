@@ -1,9 +1,7 @@
 ﻿using System;
 using System.IO;
-using ICSharpCode.SharpZipLib.Zip;
-using Packer;
+using ZipPacker;
 using System.Text;
-using ICSharpCode.SharpZipLib.Core;
 using System.IO.Compression;
 
 namespace NoSqlDatabase
@@ -45,7 +43,7 @@ namespace NoSqlDatabase
 
 				using (var stream = new FileStream("/home/tsj/Документы/some.txt", FileMode.OpenOrCreate))
 				{
-					provider.AddEntry( stream, "123.txt");
+					provider.AddEntry( stream, "5553.txt");
 				}
 
 			}

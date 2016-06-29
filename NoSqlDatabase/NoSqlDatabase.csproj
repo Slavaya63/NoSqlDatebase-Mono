@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="ICSharpCode.SharpZipLib" />
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
@@ -40,12 +39,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Packer\Packer.csproj">
-      <Project>{AB7C5C64-BB73-4423-9D87-9482A68FC182}</Project>
-      <Name>Packer</Name>
+    <ProjectReference Include="..\ZipPacker\ZipPacker.csproj">
+      <Project>{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}</Project>
+      <Name>ZipPacker</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
