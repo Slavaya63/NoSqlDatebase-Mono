@@ -1,16 +1,10 @@
 ﻿using System;
-<<<<<<< HEAD
 using System.IO;
 using System.IO.Compression;
 using System.Collections.Generic;
 
-namespace Parser
+namespace Packer
 {
-<<<<<<< Updated upstream:Parser/MyClass.cs
-	public class MyClass
-	{
-		public MyClass ()
-=======
 	public class ZipArchiveProvider : IZipPacker,IFileStream, IFileAdd , IDisposable
 	{
 		#region Property
@@ -42,7 +36,6 @@ namespace Parser
 		}
 
 		public byte[] GetBytes(Stream streamFile)
->>>>>>> Stashed changes:Packer/Base/ZipArchiveProvider.cs
 		{
 			throw new NotImplementedException();
 		}
@@ -137,16 +130,6 @@ namespace Parser
 
 		#endregion
 
-=======
-
-namespace Parser
-{
-	public class MyClass
-	{
-		public MyClass ()
-		{
-		}
->>>>>>> b595b36... Revert "Добавлен класс упаковщик в zip"
 	}
 }
 

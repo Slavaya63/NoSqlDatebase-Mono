@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSqlDatabase", "NoSqlDatabase\NoSqlDatabase.csproj", "{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{FA6FFDDE-5DE9-4DBC-B2E6-403BD4153125}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{269BF096-A001-447F-BD26-E3EC85C4971F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packer", "Packer\Packer.csproj", "{AB7C5C64-BB73-4423-9D87-9482A68FC182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,18 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{269BF096-A001-447F-BD26-E3EC85C4971F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{269BF096-A001-447F-BD26-E3EC85C4971F}.Debug|x86.Build.0 = Debug|Any CPU
+		{269BF096-A001-447F-BD26-E3EC85C4971F}.Release|x86.ActiveCfg = Release|Any CPU
+		{269BF096-A001-447F-BD26-E3EC85C4971F}.Release|x86.Build.0 = Release|Any CPU
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Debug|x86.ActiveCfg = Debug|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Debug|x86.Build.0 = Debug|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Release|x86.ActiveCfg = Release|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Release|x86.Build.0 = Release|x86
-		{FA6FFDDE-5DE9-4DBC-B2E6-403BD4153125}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FA6FFDDE-5DE9-4DBC-B2E6-403BD4153125}.Debug|x86.Build.0 = Debug|Any CPU
-		{FA6FFDDE-5DE9-4DBC-B2E6-403BD4153125}.Release|x86.ActiveCfg = Release|Any CPU
-		{FA6FFDDE-5DE9-4DBC-B2E6-403BD4153125}.Release|x86.Build.0 = Release|Any CPU
+		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB7C5C64-BB73-4423-9D87-9482A68FC182}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
