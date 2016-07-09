@@ -33,19 +33,15 @@ namespace NoSqlDatabase
 //				}
 //			}
 
-			using (ZipArchiveProvider provider = new ZipArchiveProvider())
+			using (ZipArchiveProvider provider = new ZipArchiveProvider("/home/tsj/Документы/myzip.zip"))
 			{
-				provider.OpenZip("/home/tsj/Документы/myzip.zip");
-				foreach (var item in provider.Entres)
+				foreach (ZipArchiveEntry item in provider.Entres)
 				{
 					Console.WriteLine(item.FullName);
+					Console.WriteLine(provider.ReadEntry(item));
 				}
 
-				using (var stream = new FileStream("/home/tsj/Документы/some.txt", FileMode.OpenOrCreate))
-				{
-					provider.AddEntry( stream, "5553.txt");
-				}
-
+				provider.AddEntry("/home/tsj/Документы/some.txt");
 			}
 		}
 	}

@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ZipPacker
 {
@@ -10,10 +11,26 @@ namespace ZipPacker
 		#region Property
 
 		public ZipArchive CurrentArchive{ get; private set;}
+		public string FullName{get;set;}
+		public string ArchiveName
+		{
+			get
+			{
+				return Path.GetFileName(FullName);
+			}
+		}
 
 		#endregion
 
 		#region constr
+
+		public ZipArchiveProvider()
+		{	}
+
+		public ZipArchiveProvider(string path)
+		{
+			OpenZip(path);
+		}
 
 		#endregion
 
@@ -21,6 +38,12 @@ namespace ZipPacker
 
 		public ZipArchive OpenZip(string path)
 		{
+			if (string.IsNullOrWhiteSpace(path))
+			{
+				throw new ArgumentException(string.Format("Path {0} is invalid!",path));
+			}
+
+			FullName = (string) path.Clone();
 			FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
 			CurrentArchive = new ZipArchive(stream, ZipArchiveMode.Update);
 			return CurrentArchive;
@@ -128,8 +151,39 @@ namespace ZipPacker
 			}
 		}
 
+		public void AddEntry(string path, string name = null)
+		{
+			if (name == null)
+			{
+				name = Path.GetFileName(path);
+			}
+
+			using (var stream = new FileStream(path, FileMode.OpenOrCreate))
+			{
+				this.AddEntry(stream, name);
+			}
+		}
+
 		#endregion
 
+		#region methods
+
+		/// <summary>
+		/// Read entry data
+		/// </summary>
+		/// <returns>The entry.</returns>
+		/// <param name="entry">Entry.</param>
+		public string ReadEntry(ZipArchiveEntry entry)
+		{
+			StringBuilder sb = new StringBuilder();
+			using (StreamReader data = this.EntryDataStream(entry))
+			{
+				sb.Append(data.ReadLine());
+			}
+			return sb.ToString();
+		}
+
+		#endregion
 	}
 }
 
