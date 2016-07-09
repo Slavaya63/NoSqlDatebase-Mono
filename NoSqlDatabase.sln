@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSqlDatabase", "NoSqlDatab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipPacker", "ZipPacker\ZipPacker.csproj", "{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataWorker", "DataWorker\DataWorker.csproj", "{0D5F2443-A7D0-4F97-9B9D-515FB9650853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5F2443-A7D0-4F97-9B9D-515FB9650853}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D5F2443-A7D0-4F97-9B9D-515FB9650853}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D5F2443-A7D0-4F97-9B9D-515FB9650853}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D5F2443-A7D0-4F97-9B9D-515FB9650853}.Release|x86.Build.0 = Release|Any CPU
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Debug|x86.ActiveCfg = Debug|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Debug|x86.Build.0 = Debug|x86
 		{3AEA4BA4-54BF-41CF-88F5-730D4BDCA0B4}.Release|x86.ActiveCfg = Release|x86
