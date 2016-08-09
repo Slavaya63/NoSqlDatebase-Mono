@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.IO.Compression;
 
 namespace ZipPacker
 {
@@ -9,13 +10,13 @@ namespace ZipPacker
 		/// Adds the entry.
 		/// </summary>
 		/// <param name="file">File.</param>
-		void AddEntry(string file);
+		ZipArchiveEntry AddEntry(string file);
 		/// <summary>
 		/// Adds the entry.
 		/// </summary>
 		/// <param name="stream">Stream.</param>
 		/// <param name = "name"></param>
-		void AddEntry(Stream stream, string name);
+		ZipArchiveEntry AddEntry(Stream stream, string name);
 	}
 }
 

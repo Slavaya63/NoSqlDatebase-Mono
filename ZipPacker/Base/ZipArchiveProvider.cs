@@ -133,12 +133,12 @@ namespace ZipPacker
 
 		#region IFileAdd implementation
 
-		public void AddEntry(string file)
+		public ZipArchiveEntry AddEntry(string file)
 		{
-			CurrentArchive.CreateEntry(file);
+			return CurrentArchive.CreateEntry(file);
 		}
 
-		public void AddEntry(Stream stream, string name)
+		public ZipArchiveEntry AddEntry(Stream stream, string name)
 		{
 			ZipArchiveEntry entry = CurrentArchive.CreateEntry(name);
 
@@ -149,6 +149,7 @@ namespace ZipPacker
 					writter.WriteLine(reader.ReadToEnd());
 				}
 			}
+			return entry;
 		}
 
 		public void AddEntry(string path, string name = null)
@@ -173,16 +174,15 @@ namespace ZipPacker
 		/// </summary>
 		/// <returns>The entry.</returns>
 		/// <param name="entry">Entry.</param>
-		public string ReadEntry(ZipArchiveEntry entry)
+		public static string ReadEntry(ZipArchiveEntry entry)
 		{
 			StringBuilder sb = new StringBuilder();
-			using (StreamReader data = this.EntryDataStream(entry))
+			using (StreamReader data = new StreamReader(entry.Open()))
 			{
 				sb.Append(data.ReadLine());
 			}
 			return sb.ToString();
 		}
-
 		#endregion
 	}
 }

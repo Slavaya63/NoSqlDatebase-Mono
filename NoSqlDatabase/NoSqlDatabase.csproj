@@ -7,7 +7,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NoSqlDatabase</RootNamespace>
     <AssemblyName>NoSqlDatabase</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <StartupObject>NoSqlDatabase.MainClass</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -42,6 +42,10 @@
     <ProjectReference Include="..\ZipPacker\ZipPacker.csproj">
       <Project>{A4C3E7EA-D736-4239-96D4-9DE8BEAB0859}</Project>
       <Name>ZipPacker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataWorker\DataWorker.csproj">
+      <Project>{8CD13F93-7E26-400A-8ABA-12805BDDAD7E}</Project>
+      <Name>DataWorker</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
